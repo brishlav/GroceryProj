@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="User Registration Form" />
+    <meta name="keywords" content="HTML, registration, form" />
+    <meta name="author" content="Chirag Chirag Group 01" /> 
+    <title>User Registration</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #666;
+        }
+
+        /* some helpful comments included */
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Company Logo" />
+    <h1>Welcome to Goto Gro </h1>
+    <h2>User Registration</h2>
+    <form method="post" action="http://example.com/register.php">
+        <fieldset>
+            <!-- User Profile Picture -->
+            <p>
+                <label for="photo">Profile Picture:</label>
+                <input type="file" name="photo" id="photo" accept="image/*" required />
+            </p>
+            <!-- User's Full Name -->
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name" maxlength="50" required />
+            </p>
+            <!-- User's Phone Number -->
+            <p>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" maxlength="15" required />
+            </p>
+            <!-- User's Email Address -->
+            <p>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" required />
+            </p>
+            <!-- User's Password -->
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" maxlength="20" required />
+                <!-- Changed 'spw' to 'password' and increased maximum length -->
+            </p>
+            <!-- Confirm Password -->
+            <p>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" maxlength="20" required />
+            </p>
+        </fieldset>
+
+
+        <input type="submit" value="Register" />
+        <input type="submit" value="Sign In" />
+    </form>
+</body>
+</html>
